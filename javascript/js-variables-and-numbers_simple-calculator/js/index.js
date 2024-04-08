@@ -13,27 +13,27 @@ const divideButton = document.querySelector('[data-js="divide"]');
 const exponentButton = document.querySelector('[data-js="exponent"]');
 const moduloButton = document.querySelector('[data-js="modulo"]');
 
-addButton.addEventListener("click", () => {sum=(operand1 + operand2);console.log(sum)
+addButton.addEventListener("click", () => {const sum=operand1 + operand2;console.log(sum)
   // 1. Add the two operands and store the result in a variable. Log the variable's value to the console.
 });
 
-subtractButton.addEventListener("click", () => {substract=(operand1 - operand2);console.log(substract)
+subtractButton.addEventListener("click", () => {const substract=operand1 - operand2;console.log(substract)
   // 2. Subtract the two operands and store the result in a variable. Log the variable's value to the console.
 });
 
-multiplyButton.addEventListener("click", () => {product=(operand1 * operand2);console.log(product)
+multiplyButton.addEventListener("click", () => {const product=operand1 * operand2;console.log(product)
   // 3. Multiply the two operands and store the result in a variable. Log the variable's value to the console.
 });
 
-divideButton.addEventListener("click", () => {quotient=(operand1 / operand2);console.log(quotient)
+divideButton.addEventListener("click", () => {const quotient=operand1 / operand2;console.log(quotient)
   // 4. Divide the two operands and store the result in a variable. Log the variable's value to the console.
 });
 
-exponentButton.addEventListener("click", () => {exponent=(operand1 ** operand2);console.log(exponent)
+exponentButton.addEventListener("click", () => {const exponent=operand1 ** operand2;console.log(exponent)
   // 5. Raise "operand1" to the value of "operand2" and store the result in a variable. Log the variable's value to the console.
 });
 
-moduloButton.addEventListener("click", () => {modulo=(operand1 & operand2);console.log(modulo)
+moduloButton.addEventListener("click", () => {const modulo=operand1 & operand2;console.log(modulo)
   // 6. Calculate the remainder when dividing "operand1" by "operand2" and store the result in a variable. Log the variable's value to the console.
 });
 
