@@ -38,5 +38,18 @@ calculatePizzaGain(pizzaSize1, pizzaInput2);
 // Task 2
 // define the function updatePizzaDisplay here
 
+function updatePizzaDisplay (pizzaelement, newSize) {
+  const displaySize = newSize / 24 * 100;
+  pizzaelement.style.width = displaySize + "px";
+}
+
 // Task 3
 // define the function updateOutputColor here
+
+function updateOutputColor (size1, size2) {
+  if pizzaGain >0% {
+    outputSection = var(--red);
+  } else {
+    outputSection = var(--green);
+  }
+}
