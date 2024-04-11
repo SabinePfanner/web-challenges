@@ -21,7 +21,8 @@ const inputRadius=document.querySelector('[data-js="input-radius"]');
 const inputRotation=document.querySelector('[data-js="input-ratation"]');
 
 inputColor.addEventListener("move"; () => {
-
+    ;
+   
 });
 
 inputRadius.addEventListener("move"; () => {
