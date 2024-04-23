@@ -27,14 +27,13 @@ function renderPeople(people) {
   });
 }
 
-function renderCrafts(crafts) {
-  crafts.forEach((person) => {
-    const button = document.createElement("button");
-    button.textContent = person.craft;
-    ul.append(button);
-  });
-}
-
-button.addEventListener("click" => {
-  const craftTeam = people.filter ((person)) => person.craft = "ISS");
-}
+// function renderCrafts(crafts) {
+//   crafts.forEach((person) => {
+//     const button = document.createElement("button");
+//     button.textContent = person.craft;
+//     ul.append(button);
+//     button.addEventListener ("click", () => {
+//       const craftTeam = people.filter ((person) => person.craft = "Test");
+//     });
+//   });
+// }
