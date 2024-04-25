@@ -6,12 +6,21 @@ export default function App() {
 
   const validCode = "🐡🐠🐋";
 
+  const codeIsValid = code === validCode;
+
   function handleClick(event) {
     setCode(code + event.target.textContent);
   }
 
+  function handleReset() {
+    setCode("");
+  }
+
   return (
     <div className="container">
+      <p>
+        {validCode} should match:{code}
+      </p>
       <div className="button-container">
         <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Pufferfish">
@@ -27,19 +36,14 @@ export default function App() {
           <span role="img" aria-label="Clownfish">
             🐠
           </span>
-        </button>{" "}
+        </button>
       </div>
 
-      <button
-        type="button"
-        onClick={() => {
-          setCode("");
-        }}
-      >
+      <button type="button" onClick={handleReset}>
         Reset
       </button>
 
-      {code === validCode && <p>Valid code!</p>}
+      {codeIsValid && <p>Valid code!</p>}
     </div>
   );
 }
